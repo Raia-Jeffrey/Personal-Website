@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Jeffrey Raia Portfolio</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="" />
+    <title>Raia Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script src="js/logic.js"></script>
+</head>
+
+<body>
+
+    <!--Navigation Section-->
+    <div class="topnav">
+        <div class="container flex">
+            <nav>
+                <ul>
+                    <li><a href="#contact" class="navlinks"><b>Contact</b></a></li>
+                    <li><a href="#about" class="navlinks"><b>About</b></a></li>
+                    <li><a href="#portfolio" class="navlinks"><b>Portfolio</b></a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!--Contact Form-->
+    <section id="contact" class="showcase">
+        <div class="container grid">
+            <div class="showcase-text">
+                <h1>Hello! My name is <span class="highlight">Jeffrey Raia</span> From St. Pete<br></h1>
+                <p><br>Jr. Developer</p>
+            </div>
+
+            <div class="showcase-form card">
+                <h2><span class="highlight">Contact</span> Me</h2>
+                <form>
+                    <div class="form-control">
+                        <input type="text" name="name" placeholder="Name" required>
+                    </div>
+                    <div class="form-control">
+                        <input type="email" name="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-control">
+                        <input type="text" name="msg" placeholder="Message" required>
+                    </div>
+                    <input type="submit" value="Send" class="btn btn-primary">
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!--About Section-->
+    <section id="about" class="about">
+        <div class="container grid">
+            <div class="flex-container card">
+                <!--Item #1-->
+                <div class="titleabout">
+                    <h2 class="subtitle1"><span class="highlight">About</span> Me</h2>
+                </div>
+                <!--Item #2-->
+                <div class="textbox">
+                    <p class="textboxinner1">Hello! My name is jeffrey raia, I am a up and coming Web Developer, studying at St. Petersburg College. I am passionate about making website and other media content, and wish to continue growing my developer skills in new and intresting
+                        ways.
+                    </p>
+                </div>
+                <!--Item #3-->
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('expierence')">Expierence</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>HTML5/CSS3</span><br></li>
+                        <li><span>Javascript</span><br>Including Node.js, Express, and making API's</li>
+                        <li><span>MongoDB</span><br></li>
+                        <li><span>MYSQL & PHP</span><br>And Organzing databases</li>
+                        <li><span>Wordpress</span><br></li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Web Developer Specialist</span><br>Awarded from St. Petersburg College</li>
+                        <li><span>Web Development Associate in Sciences</span><br>Currently enrolled in</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="expierence">
+                    <ul>
+                        <li><span>CMX Cinemas</span><br>Floor Staff<br>March 2020-Currently Employed</li>
+                        <li><span>Dunkin' Donuts</span><br>Team Member<br>March 2018-November 2019</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="img">
+                <img src="images/better selfie.png" alt="Photo of Jr Developer Jeffrey Raia">
+            </div>
+        </div>
+    </section>
+
+    <!--Portfolio-->
+    <section id="portfolio" class="portfolio">
+
+        
+        <div class="container flex">
+            <div class="card">
+                <h2><span class="highlight">Portfolio</span></h2>
+            </div>
+
+            <div class="card">
+                <h2>College E-Commerce Site</h2>
+                <p>Responsive E-commerce site built with pure HTML, CSS, and JS<br></p>
+                <a href="https://github.com/Raia-Jeffrey/HTML-CSS-JS-showcase" class="worklink"><b>Github</b></a>
+            </div>
+            <div class="card">
+                <h3>E-Commerce Site Backend</h3>
+                <p>Node.js Backend that links site with a MongoDB database, and a custom API in express<br></p>
+                <a href="https://github.com/Raia-Jeffrey/NodeJS-Express-MongoDB-showcase" class="worklink"><b>Github</b></a>
+            </div>
+            <div class="card">
+                <h3>Barista Blog</h3>
+                <p>A small blogpage made with a focus on accessbility standards. Made in pure HTML & CSS<br></p>
+                <a href="https://github.com/Raia-Jeffrey/Web-Accessbility-Blog" class="worklink"><b>Github</b></a>
+            </div>
+            <div class="card">
+                <h3>Wordpress Blog Page</h3>
+                <p>A blog page made in wordpress about soda flavors<br></p>
+                <a href="raiasodashop.home.blog" class="worklink"><b>Wordpress</b></a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+            <h2>Jeffrey Raia &copy; 2022</h2>
+    </footer>
+
+
+    </body>
+</html>
